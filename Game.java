@@ -246,16 +246,18 @@ public class Game{
 
         if(a == ((size - 1) - b)){
             for(int i = 0; i < size; i++){
-                if(table[i][size - 1 - i] == 0){
-                    if(i == a){
+                if(table[i][size - 1 - i] == 0)
+                    if(i == a)
                         isIt = true;
-                    } else if(table[i][size - i - 1] == num){
+
+                    else if(table[i][size - i - 1] == num)
                         isIt = true;
-                    } else if(table[i][size - i - 1] != num){
+
+                    else if(table[i][size - i - 1] != num)
                         isIt = false;
                         break;
-                    }
-                }
+
+
             }
         } else{
             isIt = false;
